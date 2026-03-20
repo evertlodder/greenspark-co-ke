@@ -6,38 +6,56 @@
 <title>Greenspark (K) Ltd - Solar Engineering Kenya</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;color:#333;background:#fff;font-size:15px;line-height:1.6}
+body{font-family:Georgia,'Times New Roman',serif;color:#333;background:#fff;font-size:17px;line-height:1.7}
 a{color:#2e7d32;text-decoration:none}
 a:hover{text-decoration:underline}
-header{border-bottom:3px solid #2e7d32;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-header img{height:70px}
-nav{display:flex;gap:20px;align-items:center}
-nav a{text-transform:uppercase;font-size:13px;font-weight:bold;letter-spacing:.5px;color:#555}
+header{border-bottom:4px solid #2e7d32;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;background:#fff}
+header img{height:80px}
+nav{display:flex;gap:25px;align-items:center}
+nav a{text-transform:uppercase;font-size:14px;font-weight:bold;letter-spacing:1px;color:#555;font-family:Arial,sans-serif}
 nav a:hover{color:#2e7d32}
-.hero{background:#f5f5f5;padding:15px 30px;border-bottom:1px solid #ddd;text-align:center}
-.hero h1{font-size:22px;font-weight:bold;color:#333;letter-spacing:1px}
-.main{max-width:1100px;margin:0 auto;padding:20px 30px;display:grid;grid-template-columns:1fr 300px;gap:30px}
-@media(max-width:768px){.main{grid-template-columns:1fr}}
-.post{margin-bottom:30px;border-bottom:1px solid #eee;padding-bottom:25px}
-.post h2{font-size:18px;margin-bottom:5px}
-.post h2 a{color:#333}
+.hero{background:#2e7d32;padding:22px 40px;text-align:center}
+.hero h1{font-size:26px;font-weight:bold;color:#fff;letter-spacing:2px;font-family:Arial,sans-serif;text-transform:uppercase}
+.main{max-width:1180px;margin:0 auto;padding:30px 40px;display:grid;grid-template-columns:1fr 320px;gap:40px}
+@media(max-width:900px){.main{grid-template-columns:1fr}}
+.post-featured{margin-bottom:40px;border-bottom:2px solid #2e7d32;padding-bottom:35px}
+.post-featured h2{font-size:28px;margin-bottom:8px;line-height:1.3}
+.post-featured h2 a{color:#1a1a1a}
+.post-featured h2 a:hover{color:#2e7d32}
+.post-featured .post-meta{font-size:13px;color:#888;margin-bottom:15px;font-family:Arial,sans-serif}
+.post-featured .feat-img{width:100%;max-height:360px;object-fit:cover;border:1px solid #ddd;margin-bottom:16px;display:block}
+.post-featured .post-excerpt{font-size:17px;color:#444;line-height:1.75}
+.post{margin-bottom:32px;border-bottom:1px solid #e5e5e5;padding-bottom:30px;overflow:hidden}
+.post h2{font-size:22px;margin-bottom:6px;line-height:1.35}
+.post h2 a{color:#1a1a1a}
 .post h2 a:hover{color:#2e7d32;text-decoration:underline}
-.post-meta{font-size:12px;color:#888;margin-bottom:10px}
-.post-thumb{float:left;margin:0 15px 10px 0}
-.post-thumb img{width:120px;height:80px;object-fit:cover;border:1px solid #ddd}
-.post-excerpt{font-size:14px;color:#555}
+.post-meta{font-size:13px;color:#888;margin-bottom:12px;font-family:Arial,sans-serif}
+.post-thumb{float:left;margin:0 20px 12px 0}
+.post-thumb img{width:240px;height:160px;object-fit:cover;border:1px solid #ddd;display:block}
+.post-excerpt{font-size:16px;color:#555;line-height:1.7}
 .post-excerpt::after{content:"";display:table;clear:both}
-.sidebar-widget{margin-bottom:25px}
-.sidebar-widget h3{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#555;border-bottom:2px solid #2e7d32;padding-bottom:5px;margin-bottom:10px}
+.read-more{display:inline-block;margin-top:10px;font-size:13px;font-family:Arial,sans-serif;color:#2e7d32;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}
+.read-more:hover{text-decoration:underline}
+.sidebar-widget{margin-bottom:35px}
+.sidebar-widget h3{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#555;border-bottom:3px solid #2e7d32;padding-bottom:7px;margin-bottom:14px;font-family:Arial,sans-serif;font-weight:bold}
 .sidebar-widget ul{list-style:none;padding:0}
-.sidebar-widget ul li{padding:4px 0;border-bottom:1px solid #f0f0f0;font-size:13px}
+.sidebar-widget ul li{padding:7px 0;border-bottom:1px solid #f0f0f0;font-size:15px}
 .sidebar-widget ul li a{color:#444}
 .sidebar-widget ul li a:hover{color:#2e7d32}
-.tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
-.tag-cloud a{background:#f0f0f0;padding:3px 8px;border-radius:3px;font-size:12px;color:#555}
-.tag-cloud a:hover{background:#2e7d32;color:#fff;text-decoration:none}
-footer{background:#333;color:#ccc;padding:20px 30px;font-size:13px;text-align:center;margin-top:30px}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px;line-height:2}
+.tag-cloud a{background:#f5f5f5;padding:4px 10px;border-radius:3px;color:#555;font-family:Arial,sans-serif;border:1px solid #e0e0e0}
+.tag-cloud a:hover{background:#2e7d32;color:#fff;text-decoration:none;border-color:#2e7d32}
+.tag-sm{font-size:12px}.tag-md{font-size:14px}.tag-lg{font-size:17px}.tag-xl{font-size:20px}
+.social-icons{display:flex;gap:10px;margin-top:5px}
+.social-icons a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:4px;background:#2e7d32;color:#fff;font-size:15px;font-weight:bold;font-family:Arial,sans-serif;text-decoration:none}
+.social-icons a:hover{background:#1b5e20;text-decoration:none}
+.social-icons a.fb{background:#3b5998}.social-icons a.fb:hover{background:#2d4373}
+.social-icons a.tw{background:#1da1f2}.social-icons a.tw:hover{background:#0c85d0}
+.social-icons a.li{background:#0077b5}.social-icons a.li:hover{background:#005983}
+.social-icons a.em{background:#555}.social-icons a.em:hover{background:#333}
+footer{background:#2e2e2e;color:#bbb;padding:28px 40px;font-size:14px;text-align:center;margin-top:40px;font-family:Arial,sans-serif;line-height:1.8}
 footer a{color:#8bc34a}
+footer a:hover{color:#aed581}
 </style>
 </head>
 <body>
@@ -49,127 +67,107 @@ footer a{color:#8bc34a}
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-<div class="hero"><h1>GREENSPARK (K) LTD, SOLAR ENGINEERING</h1></div>
+<div class="hero"><h1>Greenspark (K) Ltd &mdash; Solar Engineering Kenya</h1></div>
 <div class="main">
-<div class="posts">
-
-<div class="post"><h2><a href="posts/about-greenspark.html">About Greenspark (K) Ltd</a></h2><div class="post-meta">13/07/2016</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2016/07/13312769_591979594311412_1240720181532335513_n-562x310.jpg" alt="About Greenspark"></div>Greenspark is an engineering company specialised in solar applications for the commercial sector, large scale farming and industry. Experienced in EPC projects: engineering, supply, installation, operations and maintenance of grid connected solar installations.</div></div>
-
-<div class="post"><h2><a href="posts/mt-elgon-farm.html">Mt Elgon Farm installs the first 48 kWp, working towards grid-independence</a></h2><div class="post-meta">06/09/2021</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-01-at-16.20.56-150x150.jpeg" alt="Mt Elgon Farm"></div>Mt Elgon Farms near the Ugandan border invested in a 48 kWp solar grid system, growing organic avocados with minimal carbon footprint. Plans to expand to 250 kWp.</div></div>
-
-<div class="post"><h2><a href="posts/selecta-expands.html">Selecta expands solar system from 48 kWp to 180 kWp</a></h2><div class="post-meta">17/08/2021</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/08/WhatsApp-Image-2021-07-26-at-20.18.58-150x150.jpeg" alt="Selecta"></div>After 6 years of successful operation, Selecta Kenya expanded from 48 kWp to 180 kWp using Fronius inverters and JASolar modules.</div></div>
-
-<div class="post"><h2><a href="posts/fronius-tauro.html">Fronius Tauro - the powerful inverter for industry and agri-businesses</a></h2><div class="post-meta">22/02/2021</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/02/SE_PPIC_Fronius_Tauro-150x150.jpg" alt="Fronius Tauro"></div>The Tauro commercial inverter ranges from 50 to 100 kW. As the highest-accredited Fronius installer in Kenya, Greenspark offers this inverter from Q3 2021.</div></div>
-
-<div class="post"><h2><a href="posts/florensis.html">Florensis becomes even greener</a></h2><div class="post-meta">16/02/2021</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/02/Florensis-150x150.png" alt="Florensis"></div>Florensis in Naivasha expanded its solar system from 23 kWp to 72 kWp, saving an estimated US$20,000 annually on electricity.</div></div>
-
-<div class="post"><h2><a href="posts/fontana-timau.html">Fontana Timau upscale to 180 kW</a></h2><div class="post-meta">26/10/2020</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-25-at-10.02.40-150x150.jpeg" alt="Fontana Timau"></div>Fontana Timau expanded its 120 kW solar system to 180 kW. High altitude and clear skies make it perform beyond expectations.</div></div>
-
-<div class="post"><h2><a href="posts/fontana-mau-narok.html">Fontana Mau Narok 60 kWp</a></h2><div class="post-meta">29/07/2020</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/07/Fontana-Ayana-camp-photo-1-150x150.jpg" alt="Fontana Mau Narok"></div>A 60 kWp ground mounted system with JASolar mono crystalline modules and Fronius inverters, installed at Mau Narok farm as part of the 1 MWp Fontana project.</div></div>
-
-<div class="post"><h2><a href="posts/quality-installation.html">A different perspective on quality installation</a></h2><div class="post-meta">29/05/2020</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-29-at-15.47.36-150x150.jpeg" alt="Quality installation"></div>Greenspark recently refurbished an existing solar installation. Before and after photos show the Greenspark quality difference.</div></div>
-
-<div class="post"><h2><a href="posts/fontana-132kwp.html">The last phase of the Fontana project: installation of 132 kWp roof system</a></h2><div class="post-meta">26/05/2020</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-23-at-13.32.45-150x150.jpeg" alt="Fontana 132kWp"></div>The last 132 kWp system of the 850 kWp Fontana project is mounted on three main buildings on the farm premises.</div></div>
-
-<div class="post"><h2><a href="posts/fontana-live.html">Another Fontana solar system live!</a></h2><div class="post-meta">22/05/2020</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-22-at-09.53.37-150x150.jpeg" alt="Fontana live"></div>The latest of 11 solar systems for Fontana: an 80 kW system with 4 Fronius Symo 20 inverters and 320 JASolar modules, cutting 30% off the monthly KPLC bill.</div></div>
-
-<div class="post"><h2><a href="posts/180kwp-commissioned.html">Another 180 kWp system commissioned</a></h2><div class="post-meta">30/04/2020</div><div class="post-excerpt"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/04/WhatsApp-Image-2020-04-30-at-17.38.32-150x150.jpeg" alt="180kWp"></div>Another 180 kWp system commissioned for a flower farm in Timau, expected to save 30% on energy costs for the next 25 years.</div></div>
-
-<div class="post"><h2><a href="posts/fronius-monitoring.html">Fronius online monitoring</a></h2><div class="post-meta">2020</div><div class="post-excerpt">Real-time online monitoring of solar energy production for all Greenspark installations across Kenya.</div></div>
-
-<div class="post"><h2><a href="posts/fontana-1mwp.html">1 MWp Fontana solar installation has commenced</a></h2><div class="post-meta">2020</div><div class="post-excerpt">The landmark 1 MWp solar project for Fontana farms covering four rose farms across Nakuru and Meru County has commenced.</div></div>
-
-<div class="post"><h2><a href="posts/138kwp-rose-farm.html">Greenspark supplies and installs a 138 kWp solar system for a rose farm</a></h2><div class="post-meta">2020</div><div class="post-excerpt">A 138 kWp solar system with new Fronius inverters installed for a rose farm in Njoro, Nakuru.</div></div>
-
-<div class="post"><h2><a href="posts/fronius-certificates.html">Fronius renews Greenspark Training Certificates</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Fronius renews Greenspark's training certificates, reaffirming Service Partner Plus status - the highest Fronius accreditation.</div></div>
-
-<div class="post"><h2><a href="posts/fontana-1mwp-investment.html">Fontana LTD Kenya invests in 1 MWp solar</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Fontana LTD Kenya makes one of the largest solar investments in Kenya's agricultural sector: 1 MWp across their farms.</div></div>
-
-<div class="post"><h2><a href="posts/solar-ups.html">Solar powered UPS supports IT project</a></h2><div class="post-meta">2019</div><div class="post-excerpt">A solar powered UPS system supports an IT infrastructure project, demonstrating solar versatility beyond conventional applications.</div></div>
-
-<div class="post"><h2><a href="posts/full-black-modules.html">Full black solar modules blend in nicely on tiled roofs</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Full black solar modules provide an aesthetically pleasing solution, blending seamlessly with tiled roofs.</div></div>
-
-<div class="post"><h2><a href="posts/naivasha-220kwp.html">Naivasha farm expands solar from 186 to 220 kWp</a></h2><div class="post-meta">2019</div><div class="post-excerpt">A Naivasha flower farm expands its solar system by 33 kWp from 186 to 220 kWp to meet growing energy demands.</div></div>
-
-<div class="post"><h2><a href="posts/23kwp-office.html">This 23 kWp system provides power to an office complex</a></h2><div class="post-meta">2019</div><div class="post-excerpt">A 23 kWp solar system providing clean energy and significant utility savings to an office complex in Nairobi.</div></div>
-
-<div class="post"><h2><a href="posts/505kwp-tatu.html">Greenspark finalizes the installation of 505 kWp of solar modules</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Greenspark completes 505 kWp at Tatu City, Nairobi - one of the largest grid-connected solar systems in Kenya.</div></div>
-
-<div class="post"><h2><a href="posts/200kwp-start.html">Greenspark starts 200 kWp installation</a></h2><div class="post-meta">2018</div><div class="post-excerpt">Greenspark starts a 200 kWp solar installation for a commercial client in Kenya.</div></div>
-
-<div class="post"><h2><a href="posts/lithium-ion.html">On-grid and backup application with Lithium Ion storage</a></h2><div class="post-meta">2018</div><div class="post-excerpt">Greenspark's first commercial application combining on-grid solar with lithium ion battery storage.</div></div>
-
-<div class="post"><h2><a href="posts/300kwp-warehouse.html">Greenspark commissions 300 kWp installation for warehouse</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 300 kWp solar installation for a large warehouse delivering substantial energy savings in the logistics sector.</div></div>
-
-<div class="post"><h2><a href="posts/24kwp-mombasa-rd.html">24 kWp solar system installed on offices along Mombasa Rd, Nairobi</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 24 kWp solar system on offices along Mombasa Road in Nairobi.</div></div>
-
-<div class="post"><h2><a href="posts/84kwp-satellite.html">84 kWp roof mounted solar system - view from space</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A satellite view showing the impressive scale of Greenspark's 84 kWp roof mounted solar installation.</div></div>
-
-<div class="post"><h2><a href="posts/185kwp-farm.html">185 kWp solar system saves flower farm over $40,000 per year</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 185 kWp solar system saving a Kenyan flower farm over US$40,000 per year on electricity.</div></div>
-
-<div class="post"><h2><a href="posts/500000kwh.html">Our Kenyan customers saved 500,000 kWh on their electricity bill</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A major milestone: Greenspark's Kenyan customers collectively saved 500,000 kWh of electricity.</div></div>
-
-<div class="post"><h2><a href="posts/23kwp-westlands.html">Greenspark commissions 23 kWp tiled solar system - Westlands Nairobi</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 23 kWp solar system with tiled mounting in Westlands, Nairobi.</div></div>
-
-<div class="post"><h2><a href="posts/80kwp-top-production.html">Top energy production of 80 kWp solar PV system</a></h2><div class="post-meta">2018</div><div class="post-excerpt">An 80 kWp solar PV system achieving exceptional energy production, exceeding initial projections.</div></div>
-
-<div class="post"><h2><a href="posts/80kwp-wilson.html">Office complex near Wilson Airport equipped with 80 kWp solar PV</a></h2><div class="post-meta">2017</div><div class="post-excerpt">An office complex near Wilson Airport in Nairobi equipped with an 83 kWp solar PV installation.</div></div>
-
-<div class="post"><h2><a href="posts/kplc-demand-charge.html">Lower your KPLC Demand Charge</a></h2><div class="post-meta">2017</div><div class="post-excerpt">How commercial solar installations help Kenyan businesses lower their KPLC demand charge.</div></div>
-
-<div class="post"><h2><a href="posts/250000kwh.html">Our Kenyan customers saved 250,000 kWh to date</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Greenspark's Kenyan customers collectively saved 250,000 kWh on their electricity bills.</div></div>
-
-<div class="post"><h2><a href="posts/80kwp-ground.html">Ground Mounted System (80 kWp)</a></h2><div class="post-meta">2017</div><div class="post-excerpt">An 80 kWp ground mounted solar system demonstrating flexibility for larger properties.</div></div>
-
-<div class="post"><h2><a href="posts/reduce-electricity-bill.html">Reduce your electricity bill using solar - part 1</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Part 1 of Greenspark's guide to reducing your electricity bill with solar power for Kenyan businesses.</div></div>
-
-<div class="post"><h2><a href="posts/jasolar-agreement.html">Greenspark signs supply agreement with JASolar</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Greenspark signs a long-term supply agreement with JASolar, the world's number two solar module supplier.</div></div>
-
-<div class="post"><h2><a href="posts/solar-prices-low.html">Solar PV prices at all time low: time to go solar!</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Solar PV prices at an all time low - the ideal time for Kenyan businesses to invest in commercial solar.</div></div>
-
-<div class="post"><h2><a href="posts/60kwp-roof.html">Solar Roofmounted System (60 kWp)</a></h2><div class="post-meta">2016</div><div class="post-excerpt">A 60 kWp roof mounted solar system installed by Greenspark for a commercial client in Kenya.</div></div>
-
-<div class="post"><h2><a href="posts/fronius-accreditation.html">Fronius Service Partner Plus accreditation</a></h2><div class="post-meta">2016</div><div class="post-excerpt">Greenspark receives the Fronius Service Partner Plus accreditation - the highest certification allowing warranty maintenance and repairs.</div></div>
-
-<div class="post"><h2><a href="posts/director.html">Director of Greenspark</a></h2><div class="post-meta">2016</div><div class="post-excerpt">Meet the director of Greenspark (K) Ltd - bringing years of solar engineering expertise to Kenya.</div></div>
-
-<div class="post"><h2><a href="posts/mauritania.html">Solar water pumping Mauritania</a></h2><div class="post-meta">2016</div><div class="post-excerpt">Greenspark's solar water pumping experience in Mauritania, demonstrating expertise across the African continent.</div></div>
-
-<div class="post"><h2><a href="posts/fronius-flagship.html">Fronius Flagship Project Presentation</a></h2><div class="post-meta">13/07/2016</div><div class="post-excerpt">Fronius chose Greenspark's roof-mounted project in Timau as their flagship presentation of Fronius inverter technology.</div></div>
-
-<div class="post"><h2><a href="posts/48kwp-juja.html">Solar Roof Mounted System (48 kWp)</a></h2><div class="post-meta">12/07/2016</div><div class="post-excerpt">In May 2015 Greenspark commissioned a 48 kWp roof mounted system with Energy Management System for a floriculture company in Juja, Kenya.</div></div>
-
-</div>
-<div class="sidebar">
-<div class="sidebar-widget">
-<h3>Most Recent Postings</h3>
-<ul>
-<li><a href="posts/mt-elgon-farm.html">Mt Elgon Farm installs 48 kWp</a></li>
-<li><a href="posts/selecta-expands.html">Selecta expands from 48 to 180 kWp</a></li>
-<li><a href="posts/fronius-tauro.html">Fronius Tauro inverter</a></li>
-<li><a href="posts/florensis.html">Florensis becomes even greener</a></li>
-<li><a href="posts/fontana-timau.html">Fontana Timau upscale to 180 kW</a></li>
-<li><a href="posts/fontana-mau-narok.html">Fontana Mau Narok 60 kWp</a></li>
-<li><a href="posts/quality-installation.html">Quality installation perspective</a></li>
-</ul>
-</div>
-<div class="sidebar-widget">
-<h3>Tags</h3>
-<div class="tag-cloud">
-<a href="#">Energy Management</a>
-<a href="#">Fronius</a>
-<a href="#">JASolar</a>
-<a href="#">Solar Kenya</a>
-<a href="#">Agriculture</a>
-<a href="#">Grid-connected</a>
-<a href="#">Floriculture</a>
-<a href="#">Warehouse</a>
-</div>
-</div>
-</div>
+  <div class="posts">
+    <div class="post-featured">
+      <h2><a href="posts/mt-elgon-farm.html">Mt Elgon Farm installs the first 48 kWp, working towards grid-independence</a></h2>
+      <div class="post-meta">06 September 2021</div>
+      <img class="feat-img" src="https://www.greenspark.co.ke/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-01-at-16.20.56-562x310.jpeg" alt="Mt Elgon Farm solar installation">
+      <div class="post-excerpt">Mt Elgon Farms near the Ugandan border invested in a 48 kWp solar grid system, growing organic avocados with minimal carbon footprint. Plans to expand to 250 kWp. A landmark project for sustainable farming in Kenya.</div>
+      <a href="posts/mt-elgon-farm.html" class="read-more">Read more &rarr;</a>
+    </div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/08/WhatsApp-Image-2021-07-26-at-20.18.58-562x310.jpeg" alt="Selecta"></div><h2><a href="posts/selecta-expands.html">Selecta expands solar system from 48 kWp to 180 kWp</a></h2><div class="post-meta">17 August 2021</div><div class="post-excerpt">After 6 years of successful operation, Selecta Kenya expanded from 48 kWp to 180 kWp using Fronius inverters and JASolar modules.</div><a href="posts/selecta-expands.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/02/SE_PPIC_Fronius_Tauro-562x310.jpg" alt="Fronius Tauro"></div><h2><a href="posts/fronius-tauro.html">Fronius Tauro - the powerful inverter for industry and agri-businesses</a></h2><div class="post-meta">22 February 2021</div><div class="post-excerpt">The Tauro commercial inverter ranges from 50 to 100 kW. As the highest-accredited Fronius installer in Kenya, Greenspark offers this inverter from Q3 2021.</div><a href="posts/fronius-tauro.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2021/02/Florensis-562x310.png" alt="Florensis"></div><h2><a href="posts/florensis.html">Florensis becomes even greener</a></h2><div class="post-meta">16 February 2021</div><div class="post-excerpt">Florensis in Naivasha expanded its solar system from 23 kWp to 72 kWp, saving an estimated US$20,000 annually on electricity.</div><a href="posts/florensis.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-25-at-10.02.40-562x310.jpeg" alt="Fontana Timau"></div><h2><a href="posts/fontana-timau.html">Fontana Timau upscale to 180 kW</a></h2><div class="post-meta">26 October 2020</div><div class="post-excerpt">Fontana Timau expanded its 120 kW solar system to 180 kW. High altitude and clear skies make it perform beyond expectations.</div><a href="posts/fontana-timau.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/07/Fontana-Ayana-camp-photo-1-562x310.jpg" alt="Fontana Mau Narok"></div><h2><a href="posts/fontana-mau-narok.html">Fontana Mau Narok 60 kWp</a></h2><div class="post-meta">29 July 2020</div><div class="post-excerpt">A 60 kWp ground mounted system with JASolar mono crystalline modules and Fronius inverters, installed at Mau Narok farm.</div><a href="posts/fontana-mau-narok.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-29-at-15.47.36-562x310.jpeg" alt="Quality installation"></div><h2><a href="posts/quality-installation.html">A different perspective on quality installation</a></h2><div class="post-meta">29 May 2020</div><div class="post-excerpt">Greenspark recently refurbished an existing solar installation. Before and after photos show the Greenspark quality difference.</div><a href="posts/quality-installation.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-23-at-13.32.45-562x310.jpeg" alt="Fontana 132kWp"></div><h2><a href="posts/fontana-132kwp.html">The last phase of the Fontana project: 132 kWp roof system</a></h2><div class="post-meta">26 May 2020</div><div class="post-excerpt">The last 132 kWp system of the 850 kWp Fontana project is mounted on three main buildings on the farm premises.</div><a href="posts/fontana-132kwp.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-22-at-09.53.37-562x310.jpeg" alt="Fontana live"></div><h2><a href="posts/fontana-live.html">Another Fontana solar system live!</a></h2><div class="post-meta">22 May 2020</div><div class="post-excerpt">The latest of 11 solar systems for Fontana: an 80 kW system cutting 30% off the monthly KPLC bill.</div><a href="posts/fontana-live.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2020/04/WhatsApp-Image-2020-04-30-at-17.38.32-562x310.jpeg" alt="180kWp"></div><h2><a href="posts/180kwp-commissioned.html">Another 180 kWp system commissioned</a></h2><div class="post-meta">30 April 2020</div><div class="post-excerpt">Another 180 kWp system commissioned for a flower farm in Timau, saving 30% on energy costs.</div><a href="posts/180kwp-commissioned.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/fronius-monitoring.html">Fronius online monitoring</a></h2><div class="post-meta">2020</div><div class="post-excerpt">Real-time online monitoring of solar energy production for all Greenspark installations across Kenya.</div><a href="posts/fronius-monitoring.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/fontana-1mwp.html">1 MWp Fontana solar installation has commenced</a></h2><div class="post-meta">2020</div><div class="post-excerpt">The landmark 1 MWp solar project for Fontana farms covering four rose farms across Nakuru and Meru County.</div><a href="posts/fontana-1mwp.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/138kwp-rose-farm.html">Greenspark supplies and installs a 138 kWp solar system for a rose farm</a></h2><div class="post-meta">2020</div><div class="post-excerpt">A 138 kWp solar system with new Fronius inverters for a rose farm in Njoro, Nakuru.</div><a href="posts/138kwp-rose-farm.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/fronius-certificates.html">Fronius renews Greenspark Training Certificates</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Fronius renews Greenspark training certificates, reaffirming Service Partner Plus status.</div><a href="posts/fronius-certificates.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/fontana-1mwp-investment.html">Fontana LTD Kenya invests in 1 MWp solar</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Fontana LTD Kenya makes one of the largest solar investments in Kenya's agricultural sector.</div><a href="posts/fontana-1mwp-investment.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/solar-ups.html">Solar powered UPS supports IT project</a></h2><div class="post-meta">2019</div><div class="post-excerpt">A solar powered UPS system supports an IT infrastructure project.</div><a href="posts/solar-ups.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/full-black-modules.html">Full black solar modules blend in nicely on tiled roofs</a></h2><div class="post-meta">2019</div><div class="post-excerpt">Full black solar modules provide an aesthetically pleasing solution, blending seamlessly with tiled roofs.</div><a href="posts/full-black-modules.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/naivasha-220kwp.html">Naivasha farm expands solar from 186 to 220 kWp</a></h2><div class="post-meta">2019</div><div class="post-excerpt">A Naivasha flower farm expands its solar system by 33 kWp to meet growing energy demands.</div><a href="posts/naivasha-220kwp.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/23kwp-office.html">This 23 kWp system provides power to an office complex</a></h2><div class="post-meta">2019</div><div class="post-excerpt">A 23 kWp solar system providing clean energy to an office complex in Nairobi.</div><a href="posts/23kwp-office.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/505kwp-tatu.html">Greenspark finalizes the installation of 505 kWp at Tatu City</a></h2><div class="post-meta">2019</div><div class="post-excerpt">505 kWp at Tatu City, Nairobi - one of the largest grid-connected solar systems in Kenya.</div><a href="posts/505kwp-tatu.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/200kwp-start.html">Greenspark starts 200 kWp installation</a></h2><div class="post-meta">2018</div><div class="post-excerpt">Greenspark starts a 200 kWp solar installation for a commercial client in Kenya.</div><a href="posts/200kwp-start.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/lithium-ion.html">On-grid and backup application with Lithium Ion storage</a></h2><div class="post-meta">2018</div><div class="post-excerpt">Greenspark's first commercial application combining on-grid solar with lithium ion battery storage.</div><a href="posts/lithium-ion.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/300kwp-warehouse.html">Greenspark commissions 300 kWp installation for warehouse</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 300 kWp solar installation for a large warehouse delivering substantial energy savings.</div><a href="posts/300kwp-warehouse.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/24kwp-mombasa-rd.html">24 kWp solar system on offices along Mombasa Rd, Nairobi</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 24 kWp solar system on offices along Mombasa Road in Nairobi.</div><a href="posts/24kwp-mombasa-rd.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/84kwp-satellite.html">84 kWp roof mounted solar system - view from space</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A satellite view showing the impressive scale of Greenspark's 84 kWp roof mounted solar installation.</div><a href="posts/84kwp-satellite.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/185kwp-farm.html">185 kWp solar system saves flower farm over $40,000 per year</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 185 kWp solar system saving a Kenyan flower farm over US$40,000 per year on electricity.</div><a href="posts/185kwp-farm.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/500000kwh.html">Our Kenyan customers saved 500,000 kWh on their electricity bill</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A major milestone: Greenspark customers collectively saved 500,000 kWh of electricity.</div><a href="posts/500000kwh.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/23kwp-westlands.html">Greenspark commissions 23 kWp tiled solar system - Westlands Nairobi</a></h2><div class="post-meta">2018</div><div class="post-excerpt">A 23 kWp solar system with tiled mounting in Westlands, Nairobi.</div><a href="posts/23kwp-westlands.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/80kwp-top-production.html">Top energy production of 80 kWp solar PV system</a></h2><div class="post-meta">2018</div><div class="post-excerpt">An 80 kWp solar PV system achieving exceptional energy production, exceeding initial projections.</div><a href="posts/80kwp-top-production.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/80kwp-wilson.html">Office complex near Wilson Airport with 80 kWp solar PV</a></h2><div class="post-meta">2017</div><div class="post-excerpt">An office complex near Wilson Airport in Nairobi equipped with an 80 kWp solar PV installation.</div><a href="posts/80kwp-wilson.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/kplc-demand-charge.html">Lower your KPLC Demand Charge</a></h2><div class="post-meta">2017</div><div class="post-excerpt">How commercial solar installations help Kenyan businesses lower their KPLC demand charge.</div><a href="posts/kplc-demand-charge.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/250000kwh.html">Our Kenyan customers saved 250,000 kWh to date</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Greenspark customers collectively saved 250,000 kWh on their electricity bills.</div><a href="posts/250000kwh.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/80kwp-ground.html">Ground Mounted System (80 kWp)</a></h2><div class="post-meta">2017</div><div class="post-excerpt">An 80 kWp ground mounted solar system demonstrating flexibility for larger properties.</div><a href="posts/80kwp-ground.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/reduce-electricity-bill.html">Reduce your electricity bill using solar - part 1</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Part 1 of Greenspark's guide to reducing your electricity bill with solar for Kenyan businesses.</div><a href="posts/reduce-electricity-bill.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/jasolar-agreement.html">Greenspark signs supply agreement with JASolar</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Greenspark signs a long-term supply agreement with JASolar, the world's number two solar module supplier.</div><a href="posts/jasolar-agreement.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/solar-prices-low.html">Solar PV prices at all time low: time to go solar!</a></h2><div class="post-meta">2017</div><div class="post-excerpt">Solar PV prices at an all time low - the ideal time for Kenyan businesses to invest in commercial solar.</div><a href="posts/solar-prices-low.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/60kwp-roof.html">Solar Roofmounted System (60 kWp)</a></h2><div class="post-meta">2016</div><div class="post-excerpt">A 60 kWp roof mounted solar system installed by Greenspark for a commercial client in Kenya.</div><a href="posts/60kwp-roof.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/fronius-accreditation.html">Fronius Service Partner Plus accreditation</a></h2><div class="post-meta">2016</div><div class="post-excerpt">Greenspark receives the Fronius Service Partner Plus accreditation - the highest Fronius certification.</div><a href="posts/fronius-accreditation.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/director.html">Director of Greenspark</a></h2><div class="post-meta">2016</div><div class="post-excerpt">Meet the director of Greenspark (K) Ltd - bringing years of solar engineering expertise to Kenya.</div><a href="posts/director.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/mauritania.html">Solar water pumping Mauritania</a></h2><div class="post-meta">2016</div><div class="post-excerpt">Greenspark's solar water pumping experience in Mauritania, demonstrating expertise across Africa.</div><a href="posts/mauritania.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/fronius-flagship.html">Fronius Flagship Project Presentation</a></h2><div class="post-meta">13 July 2016</div><div class="post-excerpt">Fronius chose Greenspark's roof-mounted project in Timau as their flagship presentation.</div><a href="posts/fronius-flagship.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><div class="post-thumb"><img src="https://www.greenspark.co.ke/wp-content/uploads/2016/07/13312769_591979594311412_1240720181532335513_n-562x310.jpg" alt="About Greenspark"></div><h2><a href="posts/about-greenspark.html">About Greenspark (K) Ltd</a></h2><div class="post-meta">13 July 2016</div><div class="post-excerpt">Greenspark is an engineering company specialised in solar applications for the commercial sector, large scale farming and industry.</div><a href="posts/about-greenspark.html" class="read-more">Read more &rarr;</a></div>
+    <div class="post"><h2><a href="posts/48kwp-juja.html">Solar Roof Mounted System (48 kWp)</a></h2><div class="post-meta">12 July 2016</div><div class="post-excerpt">In May 2015 Greenspark commissioned a 48 kWp roof mounted system with Energy Management System in Juja, Kenya.</div><a href="posts/48kwp-juja.html" class="read-more">Read more &rarr;</a></div>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-widget">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="mailto:info@greenspark.co.ke" class="em" title="Email">@</a>
+        <a href="https://www.facebook.com/greensparkkenia" class="fb" title="Facebook">f</a>
+        <a href="https://twitter.com/greenspark_ke" class="tw" title="Twitter">t</a>
+        <a href="https://www.linkedin.com/company/greenspark" class="li" title="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <h3>Most Recent Posts</h3>
+      <ul>
+        <li><a href="posts/mt-elgon-farm.html">Mt Elgon Farm installs 48 kWp</a></li>
+        <li><a href="posts/selecta-expands.html">Selecta expands from 48 to 180 kWp</a></li>
+        <li><a href="posts/fronius-tauro.html">Fronius Tauro inverter</a></li>
+        <li><a href="posts/florensis.html">Florensis becomes even greener</a></li>
+        <li><a href="posts/fontana-timau.html">Fontana Timau upscale to 180 kW</a></li>
+        <li><a href="posts/fontana-mau-narok.html">Fontana Mau Narok 60 kWp</a></li>
+        <li><a href="posts/quality-installation.html">Quality installation perspective</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-widget">
+      <h3>Tags</h3>
+      <div class="tag-cloud">
+        <a href="#" class="tag-xl">Solar Kenya</a>
+        <a href="#" class="tag-lg">Fronius</a>
+        <a href="#" class="tag-xl">Agriculture</a>
+        <a href="#" class="tag-md">JASolar</a>
+        <a href="#" class="tag-lg">Grid-connected</a>
+        <a href="#" class="tag-sm">Warehouse</a>
+        <a href="#" class="tag-lg">Floriculture</a>
+        <a href="#" class="tag-md">Energy Management</a>
+        <a href="#" class="tag-sm">Lithium Ion</a>
+        <a href="#" class="tag-md">Nairobi</a>
+        <a href="#" class="tag-lg">Commercial Solar</a>
+        <a href="#" class="tag-sm">Monitoring</a>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <h3>About</h3>
+      <p style="font-size:15px;color:#555;line-height:1.7">Greenspark (K) Ltd is Kenya's leading commercial solar engineering company. Specialists in EPC projects for agriculture, industry and commercial properties.</p>
+    </div>
+  </div>
 </div>
 <footer>
-<p>Greenspark (K) Ltd &bull; P.O.Box 919, 00606 Nairobi, Kenya &bull; Tel: +254 701 997 668 / +254 705 412 450 &bull; <a href="mailto:info@greenspark.co.ke">info@greenspark.co.ke</a></p>
+  <p>Greenspark (K) Ltd &bull; P.O.Box 919, 00606 Nairobi, Kenya</p>
+  <p>Tel: +254 701 997 668 / +254 705 412 450 &bull; <a href="mailto:info@greenspark.co.ke">info@greenspark.co.ke</a></p>
 </footer>
 </body>
 </html>
